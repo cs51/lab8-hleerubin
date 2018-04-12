@@ -212,7 +212,7 @@ Exercise 8: Create a new event called publish to signal that all
 stories should be published. The event should be a unit WEvent.event.
 ......................................................................*)
 
-let publish = fun _ -> failwith "publish not implemented" ;; 
+let publish : unit WEvent.event = WEvent.new_event () ;;
 
 (*......................................................................
 Exercise 9: Write a function receive_report to handle new news
